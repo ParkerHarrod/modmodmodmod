@@ -11,8 +11,6 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import javax.xml.stream.events.Namespace;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,33 +41,23 @@ public class cattosflowers implements ModInitializer {
 
 		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "eye_see_you"), EYE_SEE_YOU);
 		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "eye_see_you"), new BlockItem(EYE_SEE_YOU, new Item.Settings().group(ItemGroup.DECORATIONS)));
-		Registry.register(Registry.BLOCK, new Identifier("cattosflowers","Cheese_Block"), Cheese_Block);
-		Block Cheese;
-		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "Cheese"), new BlockItem(Cheese, new Item.Settings().group(ItemGroup.FOOD)));
-		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "Corn_Block"), Corn_Block);
-		Block Corn;
-		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "Corn"), new BlockItem(Corn,new Item.Settings().group(ItemGroup.FOOD)));
-		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "Cotton_Candy_Block"), Cotton_Candy_Block);
-		Block Candy;
-		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "Candy"), new BlockItem(Candy,new Item.Settings().group(ItemGroup.FOOD)));
-		Block Cotton;
-		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "Cotton"), new BlockItem(Cotton,new Item.Settings().group(ItemGroup.MISC)));
-		Block Bean;
-		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "Bean"), new BlockItem(Bean,new Item.Settings().group(ItemGroup.FOOD)));
-		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "Bean_Block"), Bean_Block);
-		Block Toe;
-		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "Toe"), new BlockItem(Toe,new Item.Settings().group(ItemGroup.FOOD)));
-		Object Foot;
-		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "Foot"), Foot);
-		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "Im_Always_Watching"), Im_Always_Watching);
-		Block eye;
-		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "eye"), new BlockItem(eye,new Item.Settings().group(ItemGroup.MISC)));
-		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "James_Charles"), James_Charles);
-		Block Hi_Sisters;
-		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "Hi_Sisters"), new BlockItem(Hi_Sisters,new Item.Settings().group(ItemGroup.MISC)));
-		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "Bingus_Block"));
-		Block Bingus;
-		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "Bingus"), new BlockItem(Bingus,new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.BLOCK, new Identifier("cattosflowers","cheese_block"), Cheese_Block);
+		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "cheese"), new BlockItem(Cheese_Block, new Item.Settings().group(ItemGroup.FOOD)));
+		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "corn_block"), Corn_Block);
+		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "corn"), new BlockItem(Corn_Block,new Item.Settings().group(ItemGroup.FOOD)));
+		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "cotton_candy_block"), Cotton_Candy_Block);
+		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "candy"), new BlockItem(Cotton_Candy_Block,new Item.Settings().group(ItemGroup.FOOD)));
+		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "cotton"), new BlockItem(Cotton_Candy_Block,new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "bean"), new BlockItem(Bean_Block,new Item.Settings().group(ItemGroup.FOOD)));
+		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "bean_block"), Bean_Block);
+		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "toe"), new BlockItem(Foot,new Item.Settings().group(ItemGroup.FOOD)));
+		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "foot"), Foot);
+		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "im_always_watching"), Im_Always_Watching);
+		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "eye"), new BlockItem(Im_Always_Watching,new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "james_charles"), James_Charles);
+		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "hi_sisters"), new BlockItem(James_Charles,new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.BLOCK, new Identifier("cattosflowers", "bingus_block"), Bingus_Block);
+		Registry.register(Registry.ITEM, new Identifier("cattosflowers", "bingus"), new BlockItem(Bingus_Block,new Item.Settings().group(ItemGroup.MISC)));
 
 		LOGGER.info("A Robin movie what would that even be like");
 	}
